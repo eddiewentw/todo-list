@@ -5,11 +5,42 @@ html(lang='zh-Hant')
 
 		include ./common/head.pug
 
-		title Web Starter
+		title Todo List
 
 	body
 
-		.welcome
-			| Welcome to
-			br
-			| web starter
+		.control-bar
+			#uncompleted.status-filter
+				.check-flag.-dark.-checked
+				| Uncompleted tasks
+			#completed.status-filter
+				.check-flag.-dark.-checked
+				| Completed tasks
+			#remove-completed.action-button.-dark
+				| Remove completed tasks
+				i.fa.fa-trash
+			#add-task.action-button
+				| Add a task
+				i.fa.fa-plus
+
+		.task-wrapper
+
+		.window-overlay
+
+			.task-editor
+				.title Add a new task
+				input.task(type='text' placeholder='describe your task ....')
+				.control-bar
+					#cancel.action-button.-dark
+						| Cancel
+					#confirm.action-button
+						| Confirm
+						i.fa.fa-check
+
+		._template-block
+
+			.task-item
+				.check-flag
+				.title
+				i.fa.fa-edit
+				i.fa.fa-trash

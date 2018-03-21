@@ -1,0 +1,29 @@
+.action-button {
+	color: #FCBAAD;
+	padding: 7px 10px;
+	border-radius: 6px;
+	border: 1px solid transparent;
+	cursor: pointer;
+
+	&:hover {
+		border-color: #FCBAAD;
+	}
+
+	& > i.fa {
+		margin-left: 5px;
+	}
+}
+
+.action-button.-dark {
+	color: #D7DDE8;
+
+	&:hover {
+		border-color: #D7DDE8;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.action-button {
+		border: none;
+	}
+}

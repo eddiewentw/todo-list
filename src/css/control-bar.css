@@ -1,0 +1,35 @@
+.control-bar {
+	display: flex;
+	align-items: center;
+	height: 60px;
+	padding: 0 20px;
+}
+
+.control-bar > .status-filter {
+	margin-right: 10px;
+}
+
+.control-bar > #remove-completed.action-button,
+.control-bar > #cancel.action-button {
+	margin-left: auto;
+}
+
+@media all and (max-width: 640px) {
+	.control-bar {
+		flex-direction: column;
+		height: auto;
+		margin: 10px 0;
+	}
+
+	.control-bar > .status-filter {
+		margin-right: auto;
+	}
+
+	.control-bar > #add-task.action-button {
+		margin-left: auto;
+	}
+
+	.task-editor > .control-bar {
+		flex-direction: row;
+	}
+}

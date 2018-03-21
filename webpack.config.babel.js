@@ -74,7 +74,10 @@ const webpackBaseConfig = {
 		],
 		cssRule: {
 			test: /\.css$/,
-			include: /src\/css/,
+			include: [
+				/src\/css/,
+				/node_modules\/font-awesome/,
+			],
 			use: {
 				css: 'css-loader',
 				postcss: 'postcss-loader',
@@ -95,7 +98,6 @@ const webpackBaseConfig = {
 					template: `src/view/${page}.pug`,
 					inject: 'body',
 					filename: `${page}.html`,
-					favicon: 'src/images/favico.png',
 					minify: {
 						collapseBooleanAttributes: true,
 						collapseWhitespace: true,

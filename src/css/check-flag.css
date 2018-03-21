@@ -1,0 +1,22 @@
+.check-flag {
+	width: 14px;
+	height: 14px;
+	border: 1px solid white;
+	border-radius: 100%;
+	cursor: pointer;
+	flex: 0 0 14px;
+
+	&.-checked {
+		background-color: #D7DDE8;
+		border-color: #D7DDE8;
+	}
+}
+
+.check-flag.-dark {
+	border-color: var(--darkBlack);
+
+	&.-checked {
+		background-color: var(--darkBlack);
+		border-color: var(--darkBlack);
+	}
+}

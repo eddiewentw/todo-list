@@ -1,0 +1,15 @@
+.status-filter {
+	display: flex;
+	color: var(--darkBlack);
+	cursor: pointer;
+
+	& > .check-flag {
+		margin-right: 6px;
+	}
+}
+
+@media all and (max-width: 640px) {
+	.status-filter {
+		padding: 7px 10px;
+	}
+}
