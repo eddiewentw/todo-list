@@ -1,0 +1,11 @@
+{
+	"pages": {
+		"index": {
+			"entry": "index"
+		}
+	},
+	"port": {
+		"webpackServer": 3000,
+		"browserSyncServer": 8080
+	}
+}
