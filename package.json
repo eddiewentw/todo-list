@@ -7,7 +7,7 @@
     "lint:js": "eslint src/js __tests__ --config .eslintrc.json",
     "lint:css": "stylelint src/css/*.css src/css/**/*.css --config .stylelintrc.json",
     "lint:pug": "pug-lint --config ./.pug-lintrc.json ./src/view",
-    "lint": "npm run lint:css && npm run lint:js",
+    "lint": "npm run lint:js && npm run lint:css && lint:pug",
     "clean": "rm -rf build coverage *.log",
     "clean:manifest": "rm build/manifest.*",
     "dev": "cross-env NODE_ENV=dev babel-node server.js",
