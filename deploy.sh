@@ -21,3 +21,7 @@ rm *.*
 rm -r __tests__ config node_modules src
 mv build/* ./
 rm -r build
+
+git add .
+git commit --allow-empty -m "$(git describe --abbrev=0)"
+git push origin gh-pages
