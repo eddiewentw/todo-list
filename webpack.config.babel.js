@@ -42,24 +42,6 @@ const webpackBaseConfig = {
 				}
 			},
 			{
-				test: /\.svg$/,
-				include: /src\/images/,
-				use: [
-					{
-						loader: 'file-loader',
-					},
-					{
-						loader: 'svgo-loader',
-						options: {
-							plugins: [
-								{ removeTitle: true },
-								{ collapseGroups: false },
-							],
-						},
-					},
-				],
-			},
-			{
 				test: /\.pug$/,
 				include: /src\/view/,
 				use: 'pug-loader',
