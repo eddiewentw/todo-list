@@ -1,6 +1,7 @@
 # build project
 yarn run build
 
+VERSION="$(git describe --abbrev=0)"
 PROJECT_NAME='todo-list'
 FOLDER_NAME="$PROJECT_NAME-gh-pages"
 
@@ -26,5 +27,5 @@ rm -r build
 echo 'Commit and push them'
 
 git add .
-git commit --allow-empty -m "$(git describe --abbrev=0)"
+git commit --allow-empty -m "$VERSION"
 git push origin gh-pages
