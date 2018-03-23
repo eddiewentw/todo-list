@@ -15,6 +15,7 @@ cp -r ./ ../$FOLDER_NAME
 cd ../$FOLDER_NAME
 echo 'Check out to `gh-pages` branch'
 
+git fetch
 git checkout gh-pages
 
 # delete files in master branch, move build/* out
