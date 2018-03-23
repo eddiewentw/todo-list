@@ -33,15 +33,6 @@ const webpackBaseConfig = {
 				use: 'babel-loader',
 			},
 			{
-				test: /\.(jpg|png|gif)$/,
-				include: /src\/images/,
-				loader: 'url-loader',
-				options: {
-					limit: 10000,
-					name: `${process.env.NODE_ENV === 'production' ? '' : '[name].'}[hash:13].[ext]`,
-				}
-			},
-			{
 				test: /\.pug$/,
 				include: /src\/view/,
 				use: 'pug-loader',
