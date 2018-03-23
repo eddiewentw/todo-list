@@ -14,6 +14,7 @@
     "prebuild": "npm run clean",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.build.babel.js",
     "postbuild": "npm run clean:manifest",
+    "prerelease": "npm run lint && npm run test",
     "release": "standard-version",
     "postrelease": "bash ./deploy.sh"
   },
