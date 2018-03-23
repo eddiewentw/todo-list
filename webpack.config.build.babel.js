@@ -17,9 +17,9 @@ const webpackBuildConfig = {
 		return base.entry;
 	})(),
 	output: {
-		...base.output,
 		path: path.join(__dirname, 'build'),
 		filename: '[chunkhash:13].js',
+		publicPath: '/todo-list/',
 	},
 	module: {
 		rules: base.module.rules.concat(
