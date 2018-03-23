@@ -14,7 +14,6 @@ const webpackDevConfig = {
 				entryObj[key] = [
 					`webpack-dev-server/client?http://localhost:${websiteJson.port.webpackServer}`,
 					'webpack/hot/dev-server',
-					'regenerator-runtime/runtime',
 					base.entry[key],
 				];
 			}
