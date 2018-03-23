@@ -31,3 +31,6 @@ echo 'Commit and push them'
 git add .
 git commit --allow-empty -m "$VERSION"
 git push origin gh-pages
+
+cd ..
+rm -rf $FOLDER_NAME
