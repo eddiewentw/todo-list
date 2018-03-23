@@ -19,6 +19,7 @@ git checkout gh-pages
 
 # delete files in master branch, move build/* out
 rm *.*
+rm .babelrc .editorconfig .eslintrc.json .pug-lintrc.json .stylelintrc.json
 rm -r __tests__ config node_modules src
 mv build/* ./
 rm -r build
